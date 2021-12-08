@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#fl{
+			display: flex;
+			border: solid;
+			margin: 0px;
+			padding: 5px;
+
+		}
+		#demo{
+			display: flex;
+		}
+	</style>
+</head>
+<body>
+
+<p id="demo"></p>
+<script type="text/javascript">
+	
+	var sum='';
+	var i=1;
+	
+	do {
+		sum += "<div id='fl'>"  +( (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1)) + "</div>";
+	
+	i++;
+	}
+	while(i<=36);
+	  document.getElementById("demo").innerHTML = sum;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab12.11</title>
+	<script type="text/javascript">
+
+
+		function qualityPoints(x){
+			x = parseInt(prompt("Dung oruulna uu"));
+			if(x>=90){
+				document.writeln("A");
+			}
+			else{
+				if(x>=80){
+					document.writeln("B");
+				}
+				else{
+					if(x>=70){
+						document.writeln("C");
+					}
+					else{
+						if(x>=60){
+							document.writeln("D");
+						}
+						else{
+							document.writeln("F")
+						}
+					}
+				}
+			}
+		};
+		document.writeln(qualityPoints());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

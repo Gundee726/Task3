@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		//a
+		let f = [10];
+		for(i=0; i<11; i++){
+			f[i] = 2;
+			
+		}
+		document.writeln("3a:");
+		document.writeln(f[6]);
+		document.writeln("</br>")
+		//b
+		let g = [4];
+		for(i=0;i<5;i++){
+			g[i] = 8;
+			
+		}
+		document.writeln("3b:");
+		document.writeln(g);
+		document.writeln("</br>")
+		//c
+		let sa = [99];
+		let sum = 0;
+		for(i=0; i<100; i++){
+			sa[i] = Math.floor((Math.random() * 10) + 1);
+			sum= sum + sa[i];
+		}
+		document.writeln("3c:");
+		document.writeln(sum);
+		document.writeln("</br>")
+		//d
+		let b = [33];
+		let a = [33];
+		for(i=0; i<11; i++){
+			a[i] = i;
+			b[i] = a[i];
+		}
+		document.writeln("3d:");
+		document.writeln(b);
+		document.writeln("</br>")
+		//e
+		let w = [98];
+		for(i=0; i<99; i++){
+			w[i] = Math.round(Math.random() * 1000) / 100;
+		}
+		document.writeln("3e:");
+		document.writeln(Math.min.apply(Math, w));
+		document.writeln(Math.max.apply(Math, w));
+		document.writeln("</br>")
+		/*
+		4a. let t = [[1,2,3],
+		[4,5,6]];
+		4b. 2 murtei;
+		4c. 3 baganatai;
+		4d. 6;
+		4e. 1,2,3;
+		4h. 3,6;
+		*/
+
+		//4g
+		let t = [[1],[2]];
+		t[0][1] = 0;
+		document.writeln("4g:");
+		document.writeln(t[0][1]);
+		document.writeln("</br>")
+		//4h
+		t[0][0] = 0;
+		t[0][2] = 0;
+		t[1][0] = 0;
+		t[1][1] = 0;
+		t[1][2] = 0;
+		//4j
+		document.writeln("4j:");
+		document.writeln(t[0][0]);
+		document.writeln(t[0][1]);
+		document.writeln(t[0][2]);
+		document.writeln("</br>")
+		//4k
+		document.writeln("4k:");
+		arrText='';
+	for (var i = 0; i < t.length; i++) {
+            for (var j = 0; j < t[i].length; j++) {
+                arrText+=t[i][j]+' ';
+            }
+            document.writeln("["+arrText+"]");
+            arrText='';
+            document.writeln("</br>")
+        }
+		//4l
+		document.writeln("4l:");
+		document.writeln("row:");
+	for (var i = 0; i < t.length; i++) {
+            for (var j = 0; j < t[i].length; j++) {
+                document.writeln("[" + i + "]" + "[" + j + "]");
+            }
+            
+            
+        }
+        document.writeln("column:");
+        for (var j = 0; j < 3; j++) {
+            for (var i = 0; i < t.length; i++) {
+                 document.writeln("[" + i + "]" + "[" + j + "]");
+            }
+            
+           
+        }
+       
+       
+   
+	</script>
+	
+	
+</body>
+</html>

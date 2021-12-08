@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab11</title>
+	<script type="text/javascript">
+		
+		document.writeln("<br>1.a.Enehuu davtaltiin aldaa for dotor , avsan baigaa ni syntax iin aldaa bolj bga ym. Taslaliin orond ; avj uguh ystoi baisan.")
+		//switch ( value % 2 ) {
+        //       case 0:
+        //          document.writeln("even int");
+
+        //        case 1: 
+        //           document.writeln("odd int");
+
+       // } 
+       document.writeln("<br> 1.B. Syntax utgiin ardaas switch-iig ashiglaj baigaa bol zaaval break commandiig duudah ystoi.")
+    /*c)Дараах код 19-оос 1 хүртэлх сондгой тоонуудыг хэвлэнэ: 
+    for (x= 19; x >= 1; x += 2 )
+        document.writeln( x ); */
+    document.writeln("<br> 1.c. 19uus 1 hurtelh gesen bolovch syntax iin aldaa gargaj 19-uus ehlen 2,2oor nemegdheer for davtaltaa bichsen baina.")
+    /* d)	Дараах код 2-оос 100 хүртэлх тэгш тоонуудыг хэвлэнэ: 
+    counter = 2;
+           do {
+    document.writeln( counter ); 
+    counter += 2;
+   }   
+   while ( counter < 100 );*/
+    document.writeln("<br>1.d tus nuhtsuld 100g oruulan tooloh uchraas <=100-g ashiglana." )
+    document.writeln("<br>2a. Table uusgej baina.")
+    var sum = 0;
+    for(i=1;i<=15;i++){
+    	sum = sum + i;
+    }
+    document.writeln("<br>3. 1ees 15 hurtelh toonii niilber ni " + sum + ".");
+    //4.	prompt цонх ашиглан хэрэглэгчээс n тоог аваад 1-ээс n хүртэлх тоонуудын квадратын нийлбэрийг ол.
+    var s = 0;
+    n = parseInt(prompt("n toog oruul"));
+    for(x=1; x<=n; x++){
+    	j = Math.pow(x,2);
+    	s = s + j;
+    }
+    document.writeln("<br> 4. n hurtelh toonuudiin kvadratuudiin niilber ni " + s + "ym.");
+    //5.	prompt цонх ашиглан хэрэглэгчээс 1-7 хооронд тоо авч харгалзах гаригийг бичиж харуул. Өөр утга оруулсан тохиолдолд “Буруу утга” гэж хэвлэ.
+    p = parseInt(prompt("Garagiin toog oruulna uu"))
+    switch(p){
+   case 7: document.writeln("<br>5.Ням"); break;
+   case 1: document.writeln("<br>5.Даваа"); break;
+   case 2: document.writeln("<br>5.Мягмар"); break;
+   case 3: document.writeln("<br>5.Лхагва"); break;
+   case 4: document.writeln("<br>5.Пүрэв"); break;
+   case 5: document.writeln("<br>5.Баасан"); break;
+   case 6: document.writeln("<br>5.Бямба"); break;
+   default: document.writeln("<br>5.Буруу утга");
+} 
+
+  
+  for(u = 1; u<=5; u++){
+  	e = prompt("1-30 hurtel too oruul");
+    
+    document.writeln("<br>"+e);
+    
+
+  	
+  }
+  /*7. i=1, j=2, k=3, m=2 бол дараах зааврууд ямар утга хэвлэх вэ?
+a) document.writeln( i == 1 ); == True gesen utgiig hevlene.
+b) document.writeln( j == 3 ); == False;
+c) document.writeln( i >= 1 && j < 4 ); == true;
+d) document.writeln( m <= 99 && k < m ); == false;
+e) document.writeln( j >= i || k == m ); == true; 
+f) document.writeln( k + m < j || 3 - j >= k ); == false; 
+g) document.writeln( !( k > m ) ); == false 
+*/ 
+
+
+//switch(k){
+// case 1: break;    
+// case 2: 
+// case 3: ++k; break;
+// case 4: --k; break;
+// default: k *= 3;
+//}
+//x = k;
+
+// k ni 1 bh uyd tus program ni shuud zogsoh bolno. x iin utga ni 1 bolno.
+// k ni 2 bh uyd ymr negen uildel hiihgui. x iin utga ni 2 bolno.
+// k ni 3 bh uyd k iin utgii program ehlehees umnu k-iin utgiig negeer nemne. Iinhuu x-iin utga 4 bolno.
+// k ni 4 bolsonoor k-iin utga program ehlehees umnu negeer horogdono. Iinhuu x iin utga 3 bolno.
+// k-iin utga 10 bh uyd default uildelruu shiljij k-iin utga buyu 10*3=30 bolon x iin utga 30 bolno.
+
+
+ 
+	</script>
+</head>
+<body>
+
+</body>
+</html>

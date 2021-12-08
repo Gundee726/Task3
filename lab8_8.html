@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>image transition</title>
+	<style type="text/css">
+		#cover{
+			position: relative;
+			margin: 0 auto;
+		}
+		#cover img{
+			position: absolute;
+			left: 0;
+			transition: opacity 3s ease-in-out;
+			transition-timing-function: linear;
+		}
+		#cover img.top:hover{opacity: 0;}
+	</style>
+</head>
+<body>
+	<div id="cover">
+		<img class="top" src="https://www.wallpapers13.com/tower-for-surveillance-of-forest-fire-night-nature-landscape-wallpaper-hd/">
+		<img class="mid" src="https://steamuserimages-a.akamaihd.net/ugc/930441829001688385/C5C95FB0A898646437F361003E6E61B5CA099358/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false">
+		<img class="bottom" src="https://wallpapercave.com/wp/wp6928960.jpg">
+	</div>
+
+</body>
+</html>

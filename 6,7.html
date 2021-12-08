@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	let a=[14];
+	//a
+	for(i=0;i<10;i++){
+		a[i] = 0;
+	}
+	document.writeln("["+a+"]");
+	document.writeln("</br>")
+	//b
+	let b= [15];
+	k=1;
+	for(i=0;i<15;i++){
+		b[i] = k;
+		k++;
+	}
+	for(i=0;i<15;i++){
+		b[i] = b[i] + 1;
+	}
+	document.writeln("["+b+"]");
+	document.writeln("</br>")
+	//c
+	let bestScore= [4];
+	for(i=0;i<5;i++){
+		bestScore[i]= Math.floor(Math.random() * 10);
+	}
+	document.writeln(bestScore);
+	document.writeln("</br>");
+	//7
+ let values= [9];
+
+function myfunction(){
+	var inp = document.getElementById('too');
+	
+	if(inp.value>=10 && inp.value<=100){
+	values.push(inp.value);
+	
+	var nemsen = document.createElement('div');
+	nemsen.id = "number";
+	nemsen.innerHTML= inp.value;
+	document.body.appendChild(nemsen);
+		
+}
+	else(alert("buruu ugugdul"));
+}
+</script>
+<input type="text" id="too" name="too">
+<input type="button" id="tovch" onclick="myfunction()" value="nem">
+</body>
+</html>
