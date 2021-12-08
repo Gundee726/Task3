@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dropdown menu</title>
+		<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
+		<style>
+		    div a{
+		    	text-decoration: none;
+		    	color: white;
+		    	text-transform: uppercase;
+		    	font-size: 15px;
+		    }
+			body{
+				background: lightblue;
+				margin: 0;
+				font-weight: 300;
+				font-family: 'Bebas Neue', cursive;
+			}
+			#topmenu{
+				float: center;
+			}
+			div a::before{
+				content: "";
+				display: none;
+				height: 5px;
+				width:100;
+			}
+			div ::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			div a:hover{
+				display: block;
+				background-color: black;
+			}
+			.container{
+				padding-top: 30px;
+				height: 60px;
+				margin: 0 auto;
+				background-color: limegreen;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				
+			}
+			#topmenu>li{
+				display: inline-block;
+				margin-left: 50px;
+				position: relative;
+			}
+			li ul{
+				position: absolute;
+				
+				display: none;
+			}
+			#topmenu>li:hover ul{
+				
+				display: block;
+			}
+			.container{
+				width: 800px;
+			}
+		</style>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class="container">
+		<ul id="topmenu">
+			<li><a href="index.html">Нүүр</a></li>
+			<li><a href="aboutme.html">Миний тухай</a></li>
+			<li><a href="hobby.html">Хобби</a></li>
+			<li><a href="area.html">Нутаг</a>
+				<ul>
+					<li><a href="picture.html">Зураг</a></li>
+					<li><a href="news.html">Түүх & Мэдээлэл</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="music.html">Дуу</a>
+				<ul>
+					<li><a href="video.html">Клип</a></li>
+					<li><a href="https://www.youtube.com/watch?v=1pBiCChscGY">Хит дуу</a></li>
+					<li><a href="newsongs.html">Шинэ дуу</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	</body>

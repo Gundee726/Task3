@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LAB6</title>
+	<link rel="stylesheet" type="text/css" href="style123.css">
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
+	<style>
+	div{
+	width: 150px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: white;
+	background: gray;
+	font-weight: bold;
+	position: relative;
+	margin: 6px;
+
+	display: inline-block;
+	text-align: center;
+	transition-timing-function: ease;
+	transition: transform 1s;
+	font-family:'Bebas Neue', cursive;
+	font-size: 30px;
+}
+.fade{
+	opacity: 0.4;
+}
+
+.fade:hover{opacity: 1; transition-property: opacity; transition-duration: 1s;}
+.color:hover{ color: black; }
+.grow:hover{transform: scale(1.3);}
+.shrink:hover{transform: scale(0.7);}
+.rotate:hover{transform: rotate(-45deg);}
+</style>
+
+</head>
+<body>
+	<div class="fade">Fade In</div>
+	<div class="color">Color</div>
+	<div class="grow">Grow</div>
+	<div class="shrink">Shrink</div>
+	<div class="rotate">Rotate</div>
+<div class="outer">	
+	<div class="button_slide slide_right">Click Me</div>
+</div>	
+</body>
+</html>
